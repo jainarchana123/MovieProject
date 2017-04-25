@@ -12,6 +12,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/bootstrap.js"></script>
         <style>
         .topnav{
           background-color: #333;
@@ -39,12 +41,12 @@
   <body bgcolor="lightgrey">
         <h2><b>Movies World</b></h2>
         <div class="topnav" id="mytopnav">
-        <a href="index.jsp"><b>Home</b></a>
-        <a href="Movie.jsp">onclick()="<%@ include file="/Movie.jsp" %>"<b>Movies</b></a>
-        <a href="<%@ include file="/Theater.jsp" %>"><b>Theatres</b></a>
-        <a href="Am.jsp"><b>Assign Movies</b></a>
-        <a href="home.jsp"><b>Admin Home</b></a>
-        <a href="Logout.jsp"><b>Log Out</b></a>
+            <a href="index.jsp"><b>Home</b></a>
+            <a href="Movie.jsp"><b>Movies</b></a>
+            <a href="Theater.jsp"><b>Theatres</b></a>
+            <a href="Am.jsp"><b>Assign Movies</b></a>
+            <a href="home.jsp"><b>Admin Home</b></a>
+            <a href="Logout.jsp"><b>Log Out</b></a>
         </div>
     </body>
 </html>

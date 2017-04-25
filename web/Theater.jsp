@@ -14,6 +14,7 @@
         <title>Add Theatre Page</title>
     </head>
     <body>
+        
        <center>
             <form action="/MovieProject/Addtheater">
         Theater Name            <input type="text" name="Name"><br/><br/>

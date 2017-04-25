@@ -12,8 +12,12 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>First Page</title>
-        <img src="/MovieProject/banner.gif">
-            <style>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="js/bootstrap.js"></script>
+        <style>
+            body {
+                background-color: #90CAF9;
+            }
         .topnav{
           background-color: #ffa000;
           overflow:hidden;
@@ -53,15 +57,10 @@
     <body bgcolor:="yellow" >
         <h2><b>Movies World</b></h2>
         <div class="topnav" id="mytopnav">
-        <a href="index.jsp"><b>Home</b></a><a href="Aboutus.jsp"><b>Aboutus</b></a>
-          <a href="Contactus.jsp"><b>Contact us</b></a>
-          </div>
-
-
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
- <br/>
- <br/>
- <br/>
+            <a href="index.jsp"><b>Home</b></a>
+            <a href="Aboutus.jsp"><b>Aboutus</b></a>
+            <a href="Contactus.jsp"><b>Contact us</b></a>
+        </div>
  <br/>
  <br/>
  <br/>
