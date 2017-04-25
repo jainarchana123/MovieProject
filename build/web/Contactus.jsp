@@ -14,6 +14,33 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>for any queries please contact................................</h1>
+        <jsp:include page="nevagitation.html" />
+        <div class="container">
+            <div class="well">
+                <h1>for any queries please contact................................</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <form method="post" action="/">
+                        <div class="form-group">
+                             <label>Name</label>
+                             <input type="text" name="Name" class="form-control input-lg">
+                         </div>
+                         <div class="form-group">
+                             <label>Email</label>
+                             <input type="email" name="Email" class="form-control input-lg">
+                         </div>
+                         <div class="form-group">
+                             <label>Your Message</label>
+                             <textarea class="form-control input-lg"></textarea>
+                         </div>
+                        <div class="form-group">
+                            <input type="submit" value="Submit" class="btn btn-primary btn-lg btn-block">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <jsp:include page="footer.html" />
     </body>
 </html>

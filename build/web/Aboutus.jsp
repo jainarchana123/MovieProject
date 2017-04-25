@@ -14,11 +14,20 @@
         <title>JSP Page</title>
     </head>
     <body>
-        Online Movie Ticket Booking System is a website to provide the customers facility to book
-        tickets for a movie online and to gather information about the movies and theatres .
-        Customer need to register at the site to book tickets to the movie. After sewlecting
-        the show,the user is presented a seating layout so that he can select seats of his choice
-        . Thereafter he is redirected to the payment gateway for making a tranction.
-        User can update his profile,take a printout of the ticket and also view his booking history.
-        ticket</body>
+        <jsp:include page="nevagitation.html" />
+        <div class="container">
+            <div class="jumbotron text-center">
+                <h2>Our Story</h2>
+            </div>
+            <p>
+                Online Movie Ticket Booking System is a website to provide the customers facility to book
+                tickets for a movie online and to gather information about the movies and theatres .
+                Customer need to register at the site to book tickets to the movie. After sewlecting
+                the show,the user is presented a seating layout so that he can select seats of his choice
+                . Thereafter he is redirected to the payment gateway for making a tranction.
+                User can update his profile,take a printout of the ticket and also view his booking history.
+                ticket
+            </p>
+        </div>
+    </body>
 </html>
