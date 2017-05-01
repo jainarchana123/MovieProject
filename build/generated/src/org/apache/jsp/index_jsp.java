@@ -9,11 +9,11 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
 
-  private static java.util.Vector _jspx_dependants;
+  private static java.util.List<String> _jspx_dependants;
 
-  private org.apache.jasper.runtime.ResourceInjector _jspx_resourceInjector;
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
 
-  public Object getDependants() {
+  public java.util.List<String> getDependants() {
     return _jspx_dependants;
   }
 
@@ -29,7 +29,6 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
     JspWriter _jspx_out = null;
     PageContext _jspx_page_context = null;
 
-
     try {
       response.setContentType("text/html;charset=UTF-8");
       pageContext = _jspxFactory.getPageContext(this, request, response,
@@ -40,98 +39,56 @@ public final class index_jsp extends org.apache.jasper.runtime.HttpJspBase
       session = pageContext.getSession();
       out = pageContext.getOut();
       _jspx_out = out;
-      _jspx_resourceInjector = (org.apache.jasper.runtime.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\n");
-      out.write("   \"http://www.w3.org/TR/html4/loose.dtd\">\n");
-      out.write("\n");
-      out.write("<html>\n");
-      out.write("    <head>\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
-      out.write("        <title>First Page</title>\n");
-      out.write("        <img src=\"/MovieProject/movie.jpg\">\n");
-      out.write("            <style>\n");
-      out.write("        .topnav{\n");
-      out.write("          background-color: #ffa000;\n");
-      out.write("          overflow:hidden;\n");
-      out.write("          }\n");
-      out.write("          .topnav a{\n");
-      out.write("          float:left;\n");
-      out.write("          display:block;\n");
-      out.write("          color: #f2f2f2;\n");
-      out.write("          text-align:center;\n");
-      out.write("          padding:14px 130px;\n");
-      out.write("          text-decoration:none;\n");
-      out.write("          font-size:17px;\n");
-      out.write("          }\n");
-      out.write("          .topnav a:hover{\n");
-      out.write("          background-color:#ddd;\n");
-      out.write("          color:black;\n");
-      out.write("          }\n");
-      out.write("          .topnav a,active{\n");
-      out.write("          background-color:#ffe082;color:blue;\n");
-      out.write("        }</style>\n");
-      out.write("        <script language=\"java script\">\n");
-      out.write("            function validateform(){\n");
-      out.write("            var name=document.uname.value;\n");
-      out.write("            var passward=document.pass.value;\n");
-      out.write("            if(name==null || name==\"\"){\n");
-      out.write("                alert(\"name can not be blank\");\n");
-      out.write("                return false;\n");
-      out.write("            }\n");
-      out.write("            elseif(passward.length<6)\n");
-      out.write("            {\n");
-      out.write("                alert(\"passward must be at least 6 character long\");\n");
-      out.write("                return false;\n");
-      out.write("            }\n");
-      out.write("         }\n");
-      out.write("        </script>\n");
-      out.write("    </head>\n");
-      out.write("    <body bgcolor=\"magenta\">\n");
-      out.write("        <h2><b>Movies World</b></h2>\n");
-      out.write("        <div class=\"topnav\" id=\"mytopnav\">\n");
-      out.write("        <a href=\"index.jsp\"><b>Home</b></a><a href=\"Aboutus.jsp\"><b>Aboutus</b></a>\n");
-      out.write("          <a href=\"Contactus.jsp\"><b>Contact us</b></a>\n");
-      out.write("          </div>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>\n");
-      out.write(" <br/>\n");
-      out.write(" <br/>\n");
-      out.write(" <br/>\n");
-      out.write(" <br/>\n");
-      out.write(" <br/>\n");
-      out.write(" <br/>\n");
-      out.write(" <br/>\n");
-      out.write(" <br/>\n");
-      out.write("\n");
-      out.write("          <form action=\"/MovieProject/Signin\" method=\"get\"onsubmit=\"return validateform()\">\n");
-      out.write("          \n");
-      out.write("         Username : <input type=\"text\" name=\"uname\"><br/>\n");
-      out.write("         Password :  <input type=\"password\" name=\"pass\"><br/>\n");
-      out.write("         <input type=\"submit\" value=\"signin\"><br/>\n");
-      out.write("         <a href=\"Register.jsp\">Register</a>\n");
-      out.write("         </form>\n");
-      out.write("         \n");
-      out.write("         \n");
-      out.write("          \n");
-      out.write("          \n");
-      out.write("\n");
-      out.write("   </body>\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write("\n");
-      out.write(" </html>\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\r\n");
+      out.write("   \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
+      out.write("\r\n");
+      out.write("<html>\r\n");
+      out.write("    <head>\r\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
+      out.write("        <title>First Page</title>\r\n");
+      out.write("        <link rel=\"stylesheet\" href=\"css/bootstrap.css\">\r\n");
+      out.write("        <script type=\"text/javascript\" src=\"js/jquery.js\"></script>\r\n");
+      out.write("        <script type=\"text/javascript\" src=\"js/bootstrap.js\"></script>\r\n");
+      out.write("    </head>\r\n");
+      out.write("    <body bgcolor:=\"yellow\" >\r\n");
+      out.write("        <nav class=\"navbar navbar-inverse\">\r\n");
+      out.write("            <div class=\"container-fluid\">\r\n");
+      out.write("                <!-- Brand and toggle get grouped for better mobile display -->\r\n");
+      out.write("                <div class=\"navbar-header\">\r\n");
+      out.write("                  <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\r\n");
+      out.write("                    <span class=\"sr-only\">Toggle navigation</span>\r\n");
+      out.write("                    <span class=\"icon-bar\"></span>\r\n");
+      out.write("                    <span class=\"icon-bar\"></span>\r\n");
+      out.write("                    <span class=\"icon-bar\"></span>\r\n");
+      out.write("                  </button>\r\n");
+      out.write("                  <a class=\"navbar-brand\" href=\"index.jsp\">BookMovies</a>\r\n");
+      out.write("                </div>\r\n");
+      out.write("\r\n");
+      out.write("                <!-- Collect the nav links, forms, and other content for toggling -->\r\n");
+      out.write("                <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\r\n");
+      out.write("                  <ul class=\"nav navbar-nav\">\r\n");
+      out.write("                    <li class=\"\"><a href=\"index.jsp\">Home <span class=\"sr-only\">(current)</span></a></li>\r\n");
+      out.write("                    <li><a href=\"Aboutus.jsp\">About Us</a></li>\r\n");
+      out.write("                    <li><a href=\"Contactus.jsp\">Contact Us</a></li>\r\n");
+      out.write("                    <li><a href=\"sign.jsp\">sign</a></li>\r\n");
+      out.write("                  </ul>\r\n");
+      out.write("                </div>\r\n");
+      out.write("            </div>\r\n");
+      out.write("        </nav>\r\n");
+      out.write("   </body>\r\n");
+      out.write(" </html>\r\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;
         if (out != null && out.getBufferSize() != 0)
           out.clearBuffer();
         if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
       }
     } finally {
       _jspxFactory.releasePageContext(_jspx_page_context);

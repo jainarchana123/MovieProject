@@ -12,71 +12,34 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>First Page</title>
-        <style>
-            body {
-                background-color: #90CAF9;
-            }
-        .topnav{
-          background-color: #ffa000;
-          overflow:hidden;
-          }
-          .topnav a{
-          float:left;
-          display:block;
-          color: #f2f2f2;
-          text-align:center;
-          padding:14px 132px;
-          text-decoration:none;
-          font-size:17px;
-          }
-          .topnav a:hover{
-          background-color:#ddd;
-          color:black;
-          }
-          .topnav a,active{
-          background-color:#ffe082;color:blue;
-        }</style>
-        <script language="java script">
-            function validateform(){
-            var name=document.uname.value;
-            var passward=document.pass.value;
-            if(name==null || name==""){
-                alert("name can not be blank");
-                return false;
-            }
-            elseif(passward.length<6)
-            {
-                alert("passward must be at least 6 character long");
-                return false;
-            }
-         }
-        </script>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
     </head>
     <body bgcolor:="yellow" >
-        <jsp:include page="nevagitation.html" />
-        <h2><b>Movies World</b></h2>
-        <div class="topnav" id="mytopnav">
-            <a href="index.jsp"><b>Home</b></a>
-            <a href="Aboutus.jsp"><b>Aboutus</b></a>
-            <a href="Contactus.jsp"><b>Contact us</b></a>
-            <a href="SignIn.jsp"><b>Sign In</b></a>
-        </div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.jsp">BookMovies</a>
+                </div>
 
-          <form action="/MovieProject/Signin" method="get"onsubmit="return validateform()">
-          
-         Username : <input type="text" name="uname"><br/>
-         Password :  <input type="password" name="pass"><br/>
-         <input type="submit" value="signin"><br/>
-         <a href="Register.jsp">Register</a>
-         </form>
-         
-         
-          
-          
-        <jsp:include page="footer.html" />
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class=""><a href="index.jsp">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="Aboutus.jsp">About Us</a></li>
+                    <li><a href="Contactus.jsp">Contact Us</a></li>
+                    <li><a href="sign.jsp">sign</a></li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
    </body>
-
-
-
-
  </html>

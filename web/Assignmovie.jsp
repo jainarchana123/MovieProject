@@ -13,15 +13,15 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
-    </head>
-    <body>
-            <%Class.forName("com.mysql.jdbc.Driver");
+    </head> <%Class.forName("com.mysql.jdbc.Driver");
             Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/movieuser","root","root");
             PreparedStatement pst=con.prepareStatement("select Name from movieinfo");
             PreparedStatement pst1=con.prepareStatement("select T_name from theater");
             ResultSet rs =pst.executeQuery();
             ResultSet rs1 =pst1.executeQuery();
             %>
+    <body>
+           
             
              <form action="/MovieProject/Assignservlet">
                  Movie Name      :<select name="Movie_name">

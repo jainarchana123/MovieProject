@@ -176,3 +176,10 @@ and open the template in the editor.
 	}
 
 }
+
+.movie-poster {
+    height:300px;
+}
+.tag-movie {
+    margin-top:10px;
+}
