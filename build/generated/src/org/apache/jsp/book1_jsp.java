@@ -5,7 +5,7 @@ import javax.servlet.http.*;
 import javax.servlet.jsp.*;
 import java.sql.*;
 
-public final class Assignmovie_jsp extends org.apache.jasper.runtime.HttpJspBase
+public final class book1_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
 
   private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
@@ -42,18 +42,21 @@ public final class Assignmovie_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("\r\n");
-      out.write("<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\"\r\n");
-      out.write("   \"http://www.w3.org/TR/html4/loose.dtd\">\r\n");
-      out.write("\r\n");
-      out.write("<html>\r\n");
-      out.write("    <head>\r\n");
-      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\r\n");
-      out.write("        <title>JSP Page</title>\r\n");
-      out.write("    </head> ");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>JSP Page</title>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("      ");
+      org.apache.jasper.runtime.JspRuntimeLibrary.include(request, response, "nevagitation.html", out, false);
+      out.write("\n");
+      out.write("        ");
 Class.forName("com.mysql.jdbc.Driver");
             Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/movieuser","root","root");
             PreparedStatement pst=con.prepareStatement("select Name from movieinfo");
@@ -61,61 +64,70 @@ Class.forName("com.mysql.jdbc.Driver");
             ResultSet rs =pst.executeQuery();
             ResultSet rs1 =pst1.executeQuery();
             
-      out.write("\r\n");
-      out.write("    <body>\r\n");
-      out.write("           \r\n");
-      out.write("            \r\n");
-      out.write("             <form action=\"/MovieProject/Assignservlet\">\r\n");
-      out.write("                 Movie Name      :<select name=\"Movie_name\">\r\n");
+      out.write("\n");
+      out.write("    <form action=\"/MovieProject/Booktheater\">\n");
+      out.write("        <div class=\"col-md-4 col-md-offset-4\">\n");
+      out.write("            <form action=\"/MovieProject/Add\">\n");
+      out.write("                <div class=\"form-group\">\n");
+      out.write("                    <label> Name</label>\n");
+      out.write("                    <input type=\"text\" name=\"Name\" class=\"form-control input-md\">\n");
+      out.write("                </div>\n");
+      out.write("                  Movie Name      :<select name=\"Movie_name\">\n");
       out.write("                             ");
 
                                while(rs.next()){
                              
-      out.write("\r\n");
+      out.write("\n");
       out.write("                             <option value=\"");
       out.print(rs.getString(1));
       out.write('"');
       out.write('>');
       out.print(rs.getString(1));
-      out.write("</option>\r\n");
+      out.write("</option>\n");
       out.write("                             ");
 
                              }
                              
-      out.write("\r\n");
-      out.write("                             </select>\r\n");
-      out.write("                  Theatre Name   :<select name=\"Theatre_name\">\r\n");
+      out.write("\n");
+      out.write("                             </select>\n");
+      out.write("                  Theatre Name   :<select name=\"Theatre_name\">\n");
       out.write("                             ");
 
                                while(rs1.next()){
                              
-      out.write("\r\n");
+      out.write("\n");
       out.write("                             <option value=\"");
       out.print(rs1.getString(1));
       out.write('"');
       out.write('>');
       out.print(rs.getString(1));
-      out.write("</option>\r\n");
+      out.write("</option>\n");
       out.write("                             ");
 
                              }
                              
-      out.write("\r\n");
-      out.write("                             </select>\r\n");
-      out.write("                  Date Available  :<input type=\"text\" name=\"date\">\r\n");
-      out.write("                      <input type=\"submit\" value=\"Assign\">\r\n");
-      out.write(" </form>\r\n");
+      out.write("\n");
+      out.write("                             </select>\n");
+      out.write("                             <div class=\"form-group\">\n");
+      out.write("                    <label> Contact No</label>\n");
+      out.write("                    <input type=\"text\" name=\"contactno\" class=\"form-control input-md\">\n");
+      out.write("                </div>\n");
+      out.write("                <div class=\"form-group\">\n");
+      out.write("                    <label>Email Id</label>\n");
+      out.write("                    <input type=\"text\" name=\"emailid\" class=\"form-control input-md\">\n");
+      out.write("                </div>\n");
+      out.write("                \n");
+      out.write("                  Date Available  :<input type=\"text\" name=\"date\">\n");
+      out.write("                      <input type=\"submit\" value=\"Book\">\n");
+      out.write(" </form>\n");
       out.write(" ");
 
  rs.close();
  con.close();
  
-      out.write("\r\n");
-      out.write(" \r\n");
-      out.write(" \r\n");
-      out.write(" \r\n");
-      out.write(" </body>\r\n");
-      out.write("</html>\r\n");
+      out.write("\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){
         out = _jspx_out;

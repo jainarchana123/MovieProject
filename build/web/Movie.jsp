@@ -14,43 +14,41 @@
         <title>JSP Page</title>
         <link rel="stylesheet" href="css/bootstrap.css">
         <script src="js/bootstrap.js"></script>
-        <style>
-            .topnav{
-          background-color: #333;
-          overflow:hidden;
-          }
-          .topnav a{
-          float:left;
-          display:block;
-          color: #f2f2f2;
-          text-align:center;
-          padding:14px 48.3px;
-          text-decoration:none;
-          font-size:17px;
-          }
-          .topnav a:hover{
-          background-color:#ddd;
-          color:black;
-          }
-          .topnav a,active{
-          background-color:#4caf50;color:white;
-        }
-        </style>
+         <script type="text/javascript" src="js/bootstrap.js"></script>
     </head>
     <body bgcolor="lightgrey">
-        <div class="topnav" id="mytopnav">
-            <a href="index.jsp"><b>Home</b></a>
-            <a href="Movie.jsp"><b>Movies</b></a>
-            <a href="Theater.jsp"><b>Theatres</b></a>
-            <a href="Am.jsp"><b>Assign Movies</b></a>
-            <a href="home.jsp"><b>Admin Home</b></a>
-            <a href="Logout.jsp"><b>Log Out</b></a>
-        </div>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.jsp">BookMovies</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li class=""><a href="index.jsp">Home <span class="sr-only">(current)</span></a></li>
+                    <li><a href="Add.jsp">Movies</a></li>
+                    <li><a href="Adtheater.jsp">Theaters</a></li>
+                    <li><a href="Sign.jsp">Assign Movie</a></li>
+                     <li><a href="sign.jsp">Admin Home</a></li>
+                      <li><a href="sign.jsp">Log Out</a></li>
+                  </ul>
+                </div>
+            </div>
+        </nav>
+        
         <div class="well text-center">
             <h2>Add New Movie</h2>
         </div>
         <div class="col-md-4 col-md-offset-4">
-            <form action="/MovieProject/Add">
+            <form action="/MovieProject/Add" method="post">
                 <div class="form-group">
                     <label>Movie Name</label>
                     <input type="text" name="Name" class="form-control input-md">

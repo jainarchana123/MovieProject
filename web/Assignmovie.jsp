@@ -23,8 +23,15 @@
     <body>
            
             
-             <form action="/MovieProject/Assignservlet">
-                 Movie Name      :<select name="Movie_name">
+             <div class="col-md-4 col-md-offset-4">
+            <form action="/Ticketbooking/Add">
+                <div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown Example
+  <span class="caret"></span></button>
+                <div class="form-group">
+                    <label>Movie Name</label>
+ 
+                      <select name="Movie_name">
                              <%
                                while(rs.next()){
                              %>
@@ -33,7 +40,12 @@
                              }
                              %>
                              </select>
-                  Theatre Name   :<select name="Theatre_name">
+                             </div>
+                             </div>
+                      
+                <div class="form-group">
+                    <label>Theater Name</label>
+                    <select name="Theatre_name">
                              <%
                                while(rs1.next()){
                              %>
@@ -42,6 +54,7 @@
                              }
                              %>
                              </select>
+                             </div>
                   Date Available  :<input type="text" name="date">
                       <input type="submit" value="Assign">
  </form>

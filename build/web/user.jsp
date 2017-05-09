@@ -47,23 +47,23 @@
         <div class="row">
             <div class="col-md-4 col-xs-12 tag-movie">
                 <img src="images/bahubali2.jpg" class="img-responsive movie-poster">
-                <a href="#" class="btn btn-primary btn-lg btn-block">Book Now</a>
+                <a href="#" class="btn btn-primary btn-lg btn-block" src="Bookticket.jsp">Book Now</a>
             </div>
             <div class="col-md-4 col-xs-12 tag-movie">
-                <img src="images/fast.jpg" class="img-responsive movie-poster">
-                <a href="#" class="btn btn-primary btn-lg btn-block">Book Now</a>
+                <img src="images/fast.jpg" class="img-responsive movie-poster"  src="Bookticket.jsp">
+                <a href="#" class="btn btn-primary btn-lg btn-block"  src="Bookticket.jsp">Book Now</a>
             </div>
             <div class="col-md-4 col-xs-12 tag-movie">
                 <img src="images/half-girlfriend.jpg" class="img-responsive movie-poster">
-                <a href="#" class="btn btn-primary btn-lg btn-block">Book Now</a>
+                <a href="#" class="btn btn-primary btn-lg btn-block"  src="Bookticket.jsp">Book Now</a>
             </div>
             <div class="col-md-4 col-xs-12 tag-movie">
                 <img src="images/hindimedium.jpg" class="img-responsive movie-poster">
-                <a href="#" class="btn btn-primary btn-lg btn-block">Book Now</a>
+                <a href="#" class="btn btn-primary btn-lg btn-block"  src="Bookticket.jsp">Book Now</a>
             </div>
             <div class="col-md-4 col-xs-12 tag-movie">
                 <img src="images/radta.jpg" class="img-responsive movie-poster">
-                <a href="#" class="btn btn-primary btn-lg btn-block">Book Now</a>
+                <a href="#" class="btn btn-primary btn-lg btn-block"  src="Bookticket.jsp">Book Now</a>
             </div>
         </div>
     </div>

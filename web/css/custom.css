@@ -183,3 +183,16 @@ and open the template in the editor.
 .tag-movie {
     margin-top:10px;
 }
+
+.seatings {
+    background-color:grey;
+}
+
+.seating-rows, .seatings{
+    width:30px;
+    height:30px;
+    margin-top:2px;
+    float:left;
+    margin-left:2px;
+    font-weight:700;
+}
